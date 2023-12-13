@@ -10,8 +10,6 @@ for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
 
-# Define the university's policy context
-policy_context = "According to University's academic integrity policy, which emphasizes honesty, proper citation practices, and academic responsibility..."
 
 # Streamlit app title
 st.title("CHASR BOT")
@@ -31,7 +29,7 @@ if prompt := st.chat_input("Ask your question about academic integrity:"):
     st.session_state.messages.append({"role": "assistant", "content": response})
 
 # Link to the university's academic integrity policy page
-st.markdown("For detailed information, visit the [University's Academic Integrity Policy].")
+#st.markdown("For detailed information, visit the .")
 
 # Rest of your Streamlit code...
 # Disclaimer at the top of the page
